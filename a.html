@@ -11,13 +11,15 @@
     </head>
     <body>
         <div class="container">
-            <h3>Count : <span id="countvar">0</span></h3>
-            <button id="thebutton" onclick="counter()">Click Me!</button>
+            <h2 id="hiscore">Your High score: <span id="urhighscore">0</span></h2>
+            <div class="game">
+                <h3 id="counttttt">Count : <span id="countvar">0</span></h3>
+                <button id="thebutton" onclick="counter()">Click Me!</button>
+                <h3 id="gameover"></h3>
+            </div> 
+            <button id="historysee" onclick="openhistory()">See History</button>       
         </div>
-        <div class="gameovercontainer">
-            <h3 id="gameover"></label>
-            <button id="restartbutton" style="visibility: hidden;">Restart</button>
-        </div>
+        
     <script src="c.js"></script>
     </body>
 </html>

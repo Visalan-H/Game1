@@ -1,7 +1,13 @@
 let f=0;
+// let highscore=0;
+
+var hiscorespan=document.getElementById("urhighscore");
+hiscorespan.innerText=localStorage.getItem("score");
+
+
 var countspan = document.getElementById("countvar");
+var buttonjs=document.getElementById("thebutton");
 var gameovertext=document.getElementById("gameover");
-let restartbuttonjs = document.getElementById('restartbutton');
 var count = parseInt(countspan.innerText);
 let prob = new Array(100).fill(0);
 
@@ -13,11 +19,19 @@ function counter() {
             prob[count-1]=1;
             resetprob();
         }
+    else if(buttonjs.innerHTML="Restart")
+        {
+            location.reload();
+        }
 }
 function resetprob() {
     let d = prob[Math.floor(Math.random() * prob.length)];
     if(d===1)
     {
+        if(count>hiscorespan.innerText)
+        {
+            updatestorage();
+        }
         reset();
     }
 }
@@ -27,10 +41,16 @@ function reset() {
     countspan.innerText = 0;
     f=1;
     gameovertext.innerHTML="Game Over!! The counter has been reset.";
-    restartbuttonjs.style.visibility = 'visible';
+    buttonjs.innerHTML="Restart";
+    
 }
 
-function restart()
+function updatestorage()
 {
-    console.log('hi');
+    localStorage.setItem("score",countspan.innerText);
+}
+
+function openhistory()
+{
+    window.open('history.html', '_blank');
 }
