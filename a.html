@@ -12,12 +12,13 @@
     <body>
         <div class="container">
             <h2 id="hiscore">Your High score: <span id="urhighscore">0</span></h2>
+            <h2 id="congrats">New Highscore!!</h2>
             <div class="game">
                 <h3 id="counttttt">Count : <span id="countvar">0</span></h3>
                 <button id="thebutton" onclick="counter()">Click Me!</button>
                 <h3 id="gameover"></h3>
-            </div> 
-            <button id="historysee" onclick="openhistory()">See History</button>       
+            </div>
+            <button onclick="clearstorage()" id="clrstr">Clear Highscore</button> 
         </div>
         
     <script src="c.js"></script>

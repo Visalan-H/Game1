@@ -1,5 +1,6 @@
 let f=0;
 // let highscore=0;
+var congratstext=document.getElementById("congrats");
 
 var hiscorespan=document.getElementById("urhighscore");
 hiscorespan.innerText=localStorage.getItem("score");
@@ -31,6 +32,7 @@ function resetprob() {
         if(count>hiscorespan.innerText)
         {
             updatestorage();
+            congratstext.style.visibility='visible';    
         }
         reset();
     }
@@ -49,8 +51,9 @@ function updatestorage()
 {
     localStorage.setItem("score",countspan.innerText);
 }
-
-function openhistory()
+function clearstorage()
 {
-    window.open('history.html', '_blank');
+    localStorage.clear();
+    window.location.reload();
 }
+

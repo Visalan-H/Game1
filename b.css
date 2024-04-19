@@ -69,32 +69,40 @@ body{
     margin-left:70%;
     font-size: 40px;
 }
-
-#historysee{
+#congrats{
     position: absolute;
-    margin-top:-30%;
-    width: 200px;
-    height: 50px;
-    outline: 0;
-    border: 2px solid #9EC8B9;
-    border-radius: 5px;
-    background-color: #9EC8B9;  
-    cursor: pointer;
+    margin-top: -30%;
     margin-left:70%;
+    font-size: 40px;
+    visibility: hidden;
+}
+#clrstr{
     padding: 10px;
     font-size: larger;
     font-weight: 500;
     transform: scale(1);
-    transition: background-color 0.2s, color 0.2s,transform 0.2s, border 0.2s; 
+    transition: background-color 0.2s, color 0.2s,transform 0.2s, border 0.2s;
+    height:60px;
+    width: 200px;
+    cursor: pointer;
+    outline: 0;
+    border: 2px solid #9EC8B9;
+    border-radius: 5px;
+    background-color: #9EC8B9;  
+    color: #092635;
+    position: absolute; 
+    margin-top: 40%;
+    margin-left: 80%;
 }
-#historysee:hover{
+#clrstr:hover{
     background: #092635;
     color: #9EC8B9;
     transform: scale(0.90);
     border: 2px solid #9EC8B9;
     transition: background-color 0.2s, color 0.2s, transform 0.2s, border 0.2s;
 }
-#historysee:active{
+
+#clrstr:active{
     transform: scale(0.8);
     transition: transform 0.2s;
 }
