@@ -6,6 +6,8 @@ Are you prepared to test your clicking prowess and luck? This game challenges yo
 
 ## How to Play
 
+Visit this link: https://visalan-h.github.io/Game1/a.html
+
 1. **Click the Button**: Start by clicking the button on the web page.
 2. **Increase the Count**: Each click increments the count by one.
 3. **Beware of Resets**: With each click, there's a 1% chance of the count resetting.
