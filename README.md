@@ -31,7 +31,7 @@ Visit this link: https://visalan-h.github.io/Game1/a.html
 ## Additional Information
 
 - **Technology Used**: HTML, CSS, JavaScript
-- **Author**: [Visalan H]
+- **Author**: Visalan H
 ---
 
 
